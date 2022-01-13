@@ -1,0 +1,17 @@
+@use '../../utils/variables';
+
+.header {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: variables.$darker-color;
+    width: 100%;
+    &-logo{
+        width: 20vw;
+        margin: auto 40vw auto 40vw;
+    }
+}
+
+
+
+

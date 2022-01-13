@@ -1,0 +1,27 @@
+@use '../../utils/variables';
+
+.small-modal {
+    background-color: variables.$darker-color;
+    border: 3px solid variables.$main-color;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    &--close {
+        position: absolute;
+        top: 1%;
+        right: 1%;
+    }
+    &--text {
+        text-align: center;
+    }
+    &--error {
+        padding-top: .5rem;
+    }
+    &--sucess {
+        padding-top: .5rem;
+        text-align: center;
+    }
+}
+

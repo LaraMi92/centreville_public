@@ -1,0 +1,18 @@
+@use '../../utils/variables';
+
+.breadcrumb {
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    padding: 1rem;
+    &-cart, &-billing, &-shipping, &-payment {
+        color: variables.$darkest-color;
+    }
+}
+
+@media screen and (max-width: 480px) {
+   .breadcrumb {
+       width: 80%;
+   }
+}

@@ -1,0 +1,7 @@
+@use '../../utils/variables';
+
+.link {
+    &:hover {
+        color: variables.$main-color;
+    }
+}

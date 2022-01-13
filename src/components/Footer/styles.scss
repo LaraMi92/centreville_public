@@ -1,0 +1,59 @@
+@use '../../utils/variables';
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: .5rem;
+    width: 100%;
+    background-color: variables.$darker-color;
+}
+
+.icons {
+    display: flex;
+    width: 50%;
+    margin-left: 1rem;
+    &-filter {
+        width: 7%;
+        margin-right: .8rem;
+        filter: brightness(0) saturate(100%) invert(78%) sepia(75%) saturate(493%) hue-rotate(8deg) brightness(104%) contrast(109%);
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.terms {
+    display: flex;
+    width: 50%;
+    justify-content: right;
+    align-items: baseline;
+    margin-right: 1rem;
+    & > span {
+        font-size: 1.2rem;
+    }
+    &--link {
+        text-decoration: none;
+        margin-right: 1rem;
+        &:hover {
+            color: variables.$main-color;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .icons {
+        width: 30%;
+        &-filter{
+        width: 20%;
+        }
+    }
+    .terms {
+        width: 70%;
+       justify-content: right;
+       &--link {
+          margin-right: 1rem;
+       }
+    }
+  
+}

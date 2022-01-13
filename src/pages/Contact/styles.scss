@@ -1,0 +1,62 @@
+@use '../../utils/variables';
+
+.contact{
+    width: 50%;
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    &--infos{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        &-name {
+            display: flex;
+            flex-flow: column wrap;
+            margin-right: .3rem;
+        }
+        &-email {
+            display: flex;
+            flex-flow: column wrap;
+        }
+    }
+    &--message {
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: 1.5rem;
+    }
+    &--send {
+        display: flex;
+        justify-content: center;
+        & > button {
+            border: 3px solid variables.$main-color;
+            width: 100%;
+            margin: auto;
+            &:hover {
+                background-color: variables.$main-color;
+            }
+        }
+    }
+}
+
+.input, 
+.checkout--billing select {
+    border: 3px solid variables.$main-color;
+    background: transparent;
+    padding: 1rem;
+    display: block;
+    &:focus {
+        border: 3px solid variables.$darker-color;
+        outline: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact {
+        display: block;
+        max-width: 100%;
+        &--infos {
+           display: block;
+        }
+    }
+ }

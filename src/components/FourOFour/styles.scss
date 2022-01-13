@@ -1,0 +1,14 @@
+@use '../../utils/variables';
+
+.four-o-four {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    &--h1, &--h2 {
+        font-size: 200%;
+        color: variables.$darkest-color;
+    }
+}

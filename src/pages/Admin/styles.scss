@@ -1,0 +1,32 @@
+@use '../../utils/variables';
+
+.button {
+    border: 3px solid variables.$main-color;
+    text-align: left;
+    font-family: variables.$font;
+    margin: 1rem;
+    padding: .3rem 1rem .3rem 1rem;
+     &:hover {
+         cursor: pointer;
+         background-color: variables.$main-color;
+     }
+   }
+
+   .admin{
+       width: 100%;
+        /* &-directory > .directory-item{
+            max-width: 80%;
+            height: auto;
+            display: flex;
+            flex-flow: row wrap;
+            //overflow-x: auto;
+        } */
+
+}
+
+#admin-directory {
+   /*  max-width: 30vw;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: auto; */
+     }

@@ -1,0 +1,57 @@
+@use '../../utils/variables';
+
+.account {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    &-column {
+        padding: 1rem;
+        width: 50%;
+    }
+    &-line {
+        margin: .5rem;
+    }
+    &-delete {
+        border: 3px solid variables.$main-color;
+        margin: 2rem auto auto auto;
+        &:hover {
+            background-color: variables.$main-color;
+        }
+    }
+    &-link {
+        font-size: 1.5rem;
+        color: variables.$darkest-color;
+        &:hover {
+            color: variables.$main-color;
+            cursor:pointer;
+        }
+    }
+    &-single-order{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        margin: .5rem;
+        border-bottom: 3px solid variables.$main-color;
+        &--column{
+            &-1{
+                width: 30%;
+            }
+        }
+    }
+    &-button {
+        margin-left: 0 !important;
+    }
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.order{
+    &-category {
+        color: variables.$darkest-color;
+    }
+}

@@ -1,0 +1,31 @@
+@use '../../utils/variables';
+
+.checkout-2 {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    &-line {
+        display: flex;
+        flex-flow: column wrap;
+        margin: auto;
+        padding: 1rem;
+        width: 100%;
+    }
+}
+
+.error {
+    text-align: center;
+    color: variables.$error-color;
+}
+
+.checkout--billing select {
+   width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .checkout--billing select {
+        max-width: 70%;
+    }
+  }

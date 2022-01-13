@@ -1,0 +1,21 @@
+@use '../../../utils/variables';
+
+.payment{
+    &--card{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        &-element {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            padding: 2rem;
+            border: 3px solid variables.$main-color;
+        }
+    }
+}
+
+.paypal-buttons,.paypal-buttons-context-iframe,.paypal-buttons-label-unknown,.paypal-buttons-layout-vertical > *
+ {
+     z-index: 0 !important;
+}

@@ -1,0 +1,15 @@
+.about {
+    width: 90%;
+    display: flex;
+    align-items: baseline;
+    margin: auto;
+    padding: 1rem;
+    &--logo {
+        width: 30%;
+        margin: auto;
+    }
+    &--text {
+        width: 70%;
+        margin: auto;
+    }
+}

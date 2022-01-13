@@ -1,0 +1,65 @@
+@use '../../utils/variables';
+
+.record-detail {
+    display: flex;
+    align-items: flex-start;
+    &-left {
+        width: 50%;
+        padding: 2rem;
+        &-block {
+            position: relative;
+        }
+        &-pic {
+            width: 100%;
+        }
+        &-miniatures {
+            width: 100%;
+            &-pic {
+                width: 20%;
+                margin-right: .4rem;
+                cursor: pointer;
+            }
+        }
+    }
+    &-right {
+        width: 50%;
+        &-block {
+            padding: 2rem;
+        }
+    }
+}
+
+
+.no-expand {
+    display: none;
+}
+
+.expand {
+   position: absolute;
+   right: 0;
+   bottom: 3px;
+   height: 100%;
+   width: 20%;
+   z-index: 1;
+   background-color: variables.$main-color-transparent;
+   &-img {
+       position: absolute;
+       right: 3px;
+       bottom: 3px;
+       margin: .3rem;
+       cursor: pointer;
+   }
+}
+
+.cart {
+        display: block;
+        border: 3px solid variables.$main-color;
+        text-align: left;
+        font-family: variables.$font;
+        margin-top: 1rem;
+        padding: .3rem 1rem .3rem 1rem;
+         &:hover {
+             cursor: pointer;
+             background-color: variables.$main-color;
+         }
+}

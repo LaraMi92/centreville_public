@@ -1,0 +1,50 @@
+@use '../../utils/variables';
+
+.directory {
+    margin: .5rem;
+    padding: 1rem;
+    max-width: 100vw;
+    &-category {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        flex-flow: row wrap;
+        justify-content: left;
+        align-items: flex-end;
+    }
+    &-item {
+        max-width: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: left;
+        align-items: center;
+        text-align: center;
+        &-picture {
+           width: 30%;
+           margin: .5rem;
+           transition: transform .2s;
+           &:hover{
+               transform: scale(1.1);
+           }
+        }
+        &-description{
+            margin: .5rem;
+            padding: .5rem;
+        }
+    }
+    &-button {
+        border: 3px solid variables.$main-color;
+        text-align: left;
+        font-family: variables.$font;
+        margin: 1rem;
+        padding: .3rem 1rem .3rem 1rem;
+         &:hover {
+             cursor: pointer;
+             background-color: variables.$main-color;
+         }
+    }
+}
+
+h1 {
+    border-bottom: 3px solid variables.$main-color;
+}

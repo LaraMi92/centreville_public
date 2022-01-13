@@ -1,0 +1,80 @@
+@use '../../../utils/variables';
+
+.sticky-menu {
+    min-height: 5vh;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: variables.$darker-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: auto;
+    border-bottom: 3px solid variables.$main-color;
+}
+
+.language-switch, .user-info {
+    width: 30vw;
+    margin: 1rem;
+    & > a:hover, button:hover {
+        color: variables.$main-color;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.user-info {
+    display: flex;
+    align-items: baseline;
+    justify-content: right;
+    &--icon {
+        &:hover {
+            filter: brightness(0) saturate(100%) invert(78%) sepia(75%) saturate(493%) hue-rotate(8deg) brightness(104%) contrast(109%);
+        }
+    }
+    &--login {
+        &:hover {
+            color: variables.$main-color;
+        }
+    }
+}
+
+.links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    & > a {
+        margin: 1rem;
+        color: #000000;
+        text-decoration: none;
+        &:nth-child(2) {
+            white-space: nowrap;
+        }
+        &:hover {
+            color: variables.$main-color;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+.separator {
+    color: variables.$main-color;
+    font-weight: 700;
+    padding-bottom: .4rem;
+    background-color: variables.$darker-color;
+}
+
+@media screen and (max-width: 480px) {
+    .user-info, .language-switch {
+        max-width: 30vw; 
+        margin: .2rem;
+        &--login{
+            display: none;
+        }
+    }
+    .links {
+      & > a {
+          text-align: center;
+      }
+    }
+  
+}
