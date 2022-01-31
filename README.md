@@ -5,11 +5,13 @@ Centreville is a belgian record label mainly involved in rap music.
 
 # MVP
 The application allows users to 
-- browse through the products
+- browse through the products and filter by type
+- look at additional details (pictures + description) on each product's page
 - switch languages between French and English
 - create an account / sign in with Google
 - make an order
 - visualize the cart on any page
+- modify email address and browse through orders
 - pay by card or using Paypal
 - add new products as an admin
 - reach out to the admin through a contact form
